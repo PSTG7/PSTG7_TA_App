@@ -10,8 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AMST_7">
         <activity
+            android:name=".AplicationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
