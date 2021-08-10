@@ -1,14 +1,26 @@
 package com.example.amst_7.fragmentos;
 
+import android.app.AppComponentFactory;
+import android.content.Context;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.TextView;
 
+import com.example.amst_7.AplicationActivity;
+import com.example.amst_7.Libros.Libro;
+import com.example.amst_7.Libros.Libros;
 import com.example.amst_7.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +28,22 @@ import com.example.amst_7.R;
  * create an instance of this fragment.
  */
 public class InicioFragment extends Fragment {
+
+    Libros libros;
+    RecyclerView recyclerView;
+    ArrayList<Libro> librosArr;
+
+    Context mContext;
+
+    ListView lista;
+
+    String[][] datos = {
+            {"Viaje al centro de la tierra","Julio Verne", "Alianza"},
+            {"Doctor Sueño", "Stephen King", "Charles ScriptnerSon"},
+            {"El principito", "Antoine de Saint-Exupéry", "Reynal & Hitchcock"}
+    };
+
+    int[] datosImg = {R.drawable.viaje_ctr,R.drawable.dr_suenio,R.drawable.el_principito};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,6 +56,7 @@ public class InicioFragment extends Fragment {
 
     public InicioFragment() {
         // Required empty public constructor
+
     }
 
     /**
@@ -58,10 +87,34 @@ public class InicioFragment extends Fragment {
     }
 
     @Override
+    public void onAttach(Context context){
+        super.onAttach(context);
+        mContext = context;
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_inicio, container, false);
+        recyclerView = v.findViewById(R.id.recyckerView);
+        librosArr = new ArrayList<>();
+        //Cargamos la lista
+        cargarLista();
+        //Mostramos datos
+        mostrarDatos();
         return v;
+    }
+
+    public void cargarLista(){
+        for(int i=0;i<datos.length;i++){
+            librosArr.add(new Libro(datos[i][0],datos[i][1],datos[i][2],datosImg[i]));
+        }
+    }
+
+    public void mostrarDatos(){
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        libros = new Libros(getContext(), librosArr);
+        recyclerView.setAdapter(libros);
     }
 }

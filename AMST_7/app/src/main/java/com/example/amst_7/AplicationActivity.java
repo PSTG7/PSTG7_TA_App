@@ -9,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.amst_7.fragmentos.CategoriasFragment;
-import com.example.amst_7.fragmentos.InicioFragment;
-import com.example.amst_7.fragmentos.PerfilFragment;
+import com.example.amst_7.Libros.Libro;
+import com.example.amst_7.Libros.Libros;
+import com.example.amst_7.fragmentos.*;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class AplicationActivity extends AppCompatActivity {
@@ -32,7 +32,7 @@ public class AplicationActivity extends AppCompatActivity {
         celular = bundle.getString("celular");
         favorito = bundle.getString("favorito");
 
-        showSelectedFragment(new InicioFragment());
+        showSelectedFragment(new PerfilFragment());
 
         menu_navigation = (BottomNavigationView) findViewById(R.id.bottomnavigation_menu);
         menu_navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

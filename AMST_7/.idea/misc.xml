@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
-=======
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_libro.xml" value="0.22" />
-        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_libros.xml" value="0.22" />
-        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_login.xml" value="0.1671195652173913" />
-        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_main.xml" value="0.1671195652173913" />
-        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_registro.xml" value="0.1671195652173913" />
-        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/bottom_menu.xml" value="0.14492753623188406" />
-        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/fragment_categorias.xml" value="0.22" />
-        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/fragment_inicio.xml" value="0.14175724637681159" />
-        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/fragment_perfil.xml" value="0.14175724637681159" />
-        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/menu/bottom_menu.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/denni/OneDrive/Documentos/Aplicaciones Androids/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_aplication.xml" value="0.25" />
+        <entry key="..\:/Users/denni/OneDrive/Documentos/Aplicaciones Androids/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_libro.xml" value="0.28940217391304346" />
+        <entry key="..\:/Users/denni/OneDrive/Documentos/Aplicaciones Androids/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_libros.xml" value="0.22" />
+        <entry key="..\:/Users/denni/OneDrive/Documentos/Aplicaciones Androids/PST_TA5_G7/AMST_7/app/src/main/res/layout/fragment_categorias.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/denni/OneDrive/Documentos/Aplicaciones Androids/PST_TA5_G7/AMST_7/app/src/main/res/layout/fragment_inicio.xml" value="0.25" />
+        <entry key="..\:/Users/denni/OneDrive/Documentos/Aplicaciones Androids/PST_TA5_G7/AMST_7/app/src/main/res/layout/fragment_perfil.xml" value="0.20260416666666667" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
->>>>>>> origin/Carla_Garcia_Falconi
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
