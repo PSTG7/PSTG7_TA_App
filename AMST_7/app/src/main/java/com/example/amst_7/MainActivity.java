@@ -6,6 +6,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -28,7 +30,9 @@ public class MainActivity extends Activity {
         Timer tiempo = new Timer();
         tiempo.schedule(tarea,2000);
 
+
     }
+
 
 
 }
