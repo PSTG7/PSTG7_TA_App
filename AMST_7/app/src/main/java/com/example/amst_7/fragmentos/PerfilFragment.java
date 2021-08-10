@@ -19,12 +19,7 @@ import com.example.amst_7.R;
  */
 public class PerfilFragment extends Fragment {
 
-<<<<<<< HEAD
     TextView tvUsuario, tvNombres, tvApellidos, tvCorreo, tvCelular, tvFavorito;
-=======
-    TextView tv1;
->>>>>>> Anthonny_Piguave_Toala
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -72,7 +67,6 @@ public class PerfilFragment extends Fragment {
         AplicationActivity activity = (AplicationActivity) getActivity();
         View v = inflater.inflate(R.layout.fragment_perfil, container, false);
         String usuario = activity.getUsuario();
-<<<<<<< HEAD
         String nombres = ": "+activity.getNombres();
         String apellidos = ": "+activity.getApellidos();
         String correo = ": "+activity.getCorreo();
@@ -90,16 +84,6 @@ public class PerfilFragment extends Fragment {
         tvCorreo.setText(correo);
         tvCelular.setText(celular);
         tvFavorito.setText(favorito);
-=======
-        String nombres = activity.getNombres();
-        String apellidos = activity.getApellidos();
-        String correo = activity.getCorreo();
-        String celular = activity.getCelular();
-        String favorito = activity.getFavorito();
-        tv1 = (TextView) v.findViewById(R.id.textViewPerfil);
-        tv1.setText(usuario+nombres+apellidos+correo+celular+favorito);
->>>>>>> Anthonny_Piguave_Toala
-
         return v;
     }
 }
