@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.amst_7.AplicationActivity;
 import com.example.amst_7.Libros.Libro;
@@ -32,10 +33,6 @@ public class InicioFragment extends Fragment {
     Libros libros;
     RecyclerView recyclerView;
     ArrayList<Libro> librosArr;
-
-    Context mContext;
-
-    ListView lista;
 
     String[][] datos = {
             {"Viaje al centro de la tierra","Julio Verne", "Alianza"},
@@ -87,12 +84,6 @@ public class InicioFragment extends Fragment {
     }
 
     @Override
-    public void onAttach(Context context){
-        super.onAttach(context);
-        mContext = context;
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -116,5 +107,13 @@ public class InicioFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         libros = new Libros(getContext(), librosArr);
         recyclerView.setAdapter(libros);
+        //No tocar :p
+        libros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String titulo = librosArr.get(recyclerView.getChildAdapterPosition(view)).getTitulo();
+                Toast.makeText(getContext(), "Seleccionaste: "+titulo, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
