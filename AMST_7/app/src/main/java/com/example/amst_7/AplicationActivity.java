@@ -1,14 +1,13 @@
 package com.example.amst_7;
 
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
 
 import com.example.amst_7.fragmentos.CategoriasFragment;
 import com.example.amst_7.fragmentos.InicioFragment;
