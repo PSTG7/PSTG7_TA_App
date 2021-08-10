@@ -4,13 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_libro.xml" value="0.22" />
-        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_libros.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_libros.xml" value="0.22" />
         <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_login.xml" value="0.1671195652173913" />
         <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_main.xml" value="0.1671195652173913" />
         <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/activity_registro.xml" value="0.1671195652173913" />
+        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/bottom_menu.xml" value="0.14492753623188406" />
         <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/fragment_categorias.xml" value="0.22" />
         <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/fragment_inicio.xml" value="0.14175724637681159" />
         <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/layout/fragment_perfil.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/canto/OneDrive/Documentos/Aplicaciones Android/PST_TA5_G7/AMST_7/app/src/main/res/menu/bottom_menu.xml" value="0.16666666666666666" />
       </map>
     </option>
   </component>
