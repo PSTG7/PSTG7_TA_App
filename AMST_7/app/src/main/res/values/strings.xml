@@ -1,20 +1,12 @@
 <resources>
     <string name="app_name">AMST_7</string>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Anthonny_Piguave_Toala
     <string name="usuario">Usuario</string>
     <string name="clave">Contraseña</string>
     <string name="ingresar">Ingresar</string>
     <string name="crearCuenta">Crear una cuenta</string>
     <string name="registrarse">Registrarse</string>
     <string name="categorias">Categorias</string>
-<<<<<<< HEAD
     <string name="categoriasdesc">Observe los libros según la categoría que prefiera</string>
-=======
->>>>>>> Anthonny_Piguave_Toala
     <string name="inicio">Inicio</string>
     <string name="perfil">Perfil</string>
     <string name="formulario">Formulario</string>
@@ -24,13 +16,7 @@
     <string name="celular">Celular</string>
     <string name="favorito">Favorito</string>
     <string name="regresar">Regresar</string>
-<<<<<<< HEAD
     <string name="email">Correo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
->>>>>>> Stashed changes
-=======
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
->>>>>>> Anthonny_Piguave_Toala
 </resources>
