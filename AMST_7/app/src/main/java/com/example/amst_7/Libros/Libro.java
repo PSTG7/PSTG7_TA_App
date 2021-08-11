@@ -1,34 +1,33 @@
 package com.example.amst_7.Libros;
 
-import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
-import android.widget.RatingBar;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
+import java.io.Serializable;
 
-import com.example.amst_7.R;
-
-public class Libro{
+public class Libro implements Serializable {
 
     private static LayoutInflater insflater = null;
 
     private String titulo;
     private String autor;
     private String editor;
+    private String detalle;
     private int imgId;
 
-    public Libro(String titulo, String autor, String editor, int imgId){
+    public Libro(String titulo, String autor, String editor, int imgId, String detalle){
         this.titulo = titulo;
         this.autor = autor;
         this.editor = editor;
         this.imgId = imgId;
+        this.detalle = detalle;
+    }
+
+    public String getDetalle() {
+        return detalle;
+    }
+
+    public void setDetalle(String detalle) {
+        this.detalle = detalle;
     }
 
     public int getImgId() {

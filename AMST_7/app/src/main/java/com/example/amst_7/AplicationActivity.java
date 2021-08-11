@@ -7,17 +7,23 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.amst_7.Interfaces.IComunicarFragments;
 import com.example.amst_7.Libros.Libro;
 import com.example.amst_7.Libros.Libros;
 import com.example.amst_7.fragmentos.*;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class AplicationActivity extends AppCompatActivity {
+public class AplicationActivity extends AppCompatActivity implements IComunicarFragments {
 
     private String usuario, nombres, apellidos, correo, celular, favorito;
     BottomNavigationView menu_navigation;
+
+    FragmentManager fragmentManager;
+    FragmentTransaction fragmentTransaction;
+    DetallesFragment dtFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,4 +89,19 @@ public class AplicationActivity extends AppCompatActivity {
         finish();
     }
 
+    @Override
+    public void enviarDatosLibros(Libro libro) {
+        //Se realiza el envio
+        dtFragment = new DetallesFragment();
+        //Creamos el Bundle
+        Bundle bundle = new Bundle();
+        //Enviamos el objeto serializado
+        bundle.putSerializable("libro", libro);
+        dtFragment.setArguments(bundle);
+        //abrimos nuevo fragmento
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.container, dtFragment);
+        fragmentTransaction.commit();
+    }
 }

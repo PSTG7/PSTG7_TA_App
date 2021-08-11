@@ -7,7 +7,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.example.amst_7.Libros.Detalle_libro;
+import com.example.amst_7.Libros.Libro;
 import com.example.amst_7.R;
 
 /**
@@ -56,11 +60,28 @@ public class DetallesFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-
+    TextView detalle;
+    TextView titulo;
+    ImageView img;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.detalle_libro_fragment, container, false);
+        View view = inflater.inflate(R.layout.detalle_libro_fragment, container, false);
+        detalle = view.findViewById(R.id.detalle);
+        titulo = view.findViewById(R.id.tituloLibro_detalle);
+        img = view.findViewById(R.id.imagenDetalle);
+        //creamos el bundle que recibe datos
+        Bundle objLibro = getArguments();
+        Libro libro = null;
+        //Verificamos si existen los argumentos
+        if(objLibro!=null){
+            libro = (Libro) objLibro.getSerializable("libro");
+            //Establecemos los datos en las vistas
+            detalle.setText(libro.getDetalle());
+            titulo.setText(libro.getTitulo());
+            img.setImageResource(libro.getImgId());
+        }
+        return view;
     }
 }
